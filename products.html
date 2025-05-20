@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Heath’s Doggo Shop - All Products</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #222;
+      margin: 0; padding: 0 15px 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header, nav {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(255,111,97,0.5);
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #ff6f61;
+      margin-bottom: 25px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .product-card h2 {
+      margin: 12px 0 6px;
+      color: #ff6f61;
+    }
+    .product-card p {
+      font-size: 0.95em;
+      padding: 0 12px;
+      min-height: 48px;
+      color: #555;
+    }
+    .price {
+      font-weight: 700;
+      color: #222;
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .buy-btn {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 10px auto 15px;
+      display: block;
+      width: 80%;
+      transition: background-color 0.25s ease;
+    }
+    .buy-btn:hover {
+      background-color: #e35447;
+    }
+  </style>
+</head>
+<body>
+
+<header>Heath’s Doggo Shop</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="story.html">Our Story</a>
+</nav>
+
+<main>
+  <h1>All Products</h1>
+
+  <section class="product-grid">
+
+    <article class="product-card">
+      <img src="https://placedog.net/400/300?id=201" alt="Chewy Toy" />
+      <h2>Chewy Toy</h2>
+      <p>Ultra-durable chew toy your doggo will love.</p>
+      <div class="price">$15</div>
+      <button class="buy-btn" onclick="buyProduct('Chewy Toy', 15)">Buy Now</button>
+    </article>
+
+    <article class="product-card">
+      <img src="https://placedog.net/400/300?id=202" alt="Stylish Collar" />
+      <h2>Stylish Collar</h2>
+      <p>Comfy, stylish collar for the trendiest pups.</p>
+      <div class="price">$25</div>
+      <button class="buy-btn" onclick="buyProduct('Stylish Collar', 25)">Buy Now</button>
+    </article>
+
+    <article class="product-card">
+      <img src="https://placedog.net/400/300?id=203" alt="Fresh Shampoo" />
+      <h2>Fresh Shampoo</h2>
+      <p>Gentle shampoo for shiny, fresh fur.</p>
+      <div class="price">$12</div>
+      <button class="buy-btn" onclick="buyProduct('Fresh Shampoo', 12)">Buy Now</button>
+    </article>
+
+    <!-- Add more products here by copying this block -->
+
+    <article class="product-card">
+      <img src="https://placedog.net/400/300?id=204" alt="Bark Bath Soap" />
+      <h2>Bark Bath Soap</h2>
+      <p>Natural soap for that fresh doggy scent.</p>
+      <div class="price">$8</div>
+      <button class="buy-btn" onclick="buyProduct('Bark Bath Soap', 8)">Buy Now</button>
+    </article>
+
+    <article class="product-card">
+      <img src="https://placedog.net/400/300?id=205" alt="Paw Protection
